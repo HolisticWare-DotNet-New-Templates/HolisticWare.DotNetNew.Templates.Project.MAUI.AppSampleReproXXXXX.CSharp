@@ -1,19 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks 
-			Condition="$([MSBuild]::IsOSPlatform('linux'))"
-			>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('linux'))">
 			$(TargetFrameworks);net7.0-android
 		</TargetFrameworks>
-		<TargetFrameworks 
-			Condition="$([MSBuild]::IsOSPlatform('osx'))"
-			>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('osx'))">
 			$(TargetFrameworks);net7.0-android;net7.0-ios;net7.0-maccatalyst
 		</TargetFrameworks>
-		<TargetFrameworks 
-			Condition="$([MSBuild]::IsOSPlatform('windows'))"
-			>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">
 			$(TargetFrameworks);net7.0-windows10.0.19041.0
 		</TargetFrameworks>
 		<!-- 
@@ -89,6 +83,45 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+
+		<!-- 
+			UI frameworks
+			MVVM 
+			https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/
+							https://aka.ms/mvvmtoolkit/docs
+			https://github.com/CommunityToolkit/MVVM-Samples
+			https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/puttingthingstogether
+			https://medium.com/@edin.sahbaz/mvvm-implementation-using-net-community-toolkit-mvvm-source-generator-in-net-maui-810a137af47e
+			Introducing the .NET Community Toolkit - MVVM, Performance, Diagnostics, & More
+				https://www.youtube.com/watch?v=oKMZiDA9ogM&ab_channel=dotnet
+			.NET Community Toolkit 8.0 - MVVM Goodness for .NET MAUI | .NET Conf: Focus on MAUI	
+				https://www.youtube.com/watch?v=OP9g5dM0bgk&ab_channel=dotnet
+			https://www.codeproject.com/Articles/5332442/Csharp-MVVM-Toolkit-Demo
+			https://www.reddit.com/r/csharp/comments/zd9j4n/how_to_learn_mvvm_with_communitytoolkitmvvm/
+			
+
+			https://github.com/XAM-Consulting/FreshMvvm.Maui
+			https://github.com/dhindrik/TinyMvvm
+			https://github.com/thomasclaudiushuber/mvvmgen
+
+			https://github.com/PrismLibrary/Prism
+			not for MAUI yet
+		<PackageReference Include="Prism.Core" Version="9.0.271-pre" />
+
+			Catel??
+		-->
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="FreshMvvm.Maui" Version="0.0.4" />
+		<PackageReference Include="TinyMvvm.Maui" Version="4.2.1" />
+		<PackageReference Include="MvvmGen" Version="1.2.1" />
+		<PackageReference Include="ReactiveUI" Version="19.5.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="UserInterface/DateTime/Model/" />
+	  <Folder Include="UserInterface/Person/Model/" />
+	  <Folder Include="UserInterface/StopWatch/Model/" />
+	  <Folder Include="UserInterface/StopWatch/ViewModel/" />
 	</ItemGroup>
 
 </Project>

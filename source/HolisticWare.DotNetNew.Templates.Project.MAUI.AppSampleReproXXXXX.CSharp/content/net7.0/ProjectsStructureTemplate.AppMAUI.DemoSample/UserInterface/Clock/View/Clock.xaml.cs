@@ -1,18 +1,16 @@
-﻿namespace AppMAUI.DemoSample;
+namespace AppMAUI.DemoSample.UserInterface.Clock.View;
 
 public partial class 
-										App
+										Page 
 										:
-										Application
+										ContentPage
 {
 	public 
-										App
+										Page
 										(											
 										)
 	{
 		InitializeComponent();
-
-		MainPage = new AppShell();
 
 		return;
 	}
