@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace ProjectsStructureTemplate.AppMAUI.DemoSample;
+namespace AppMAUI.DemoSample;
 
 public class Program
 {

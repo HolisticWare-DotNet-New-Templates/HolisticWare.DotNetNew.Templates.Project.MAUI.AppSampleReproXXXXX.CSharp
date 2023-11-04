@@ -2,11 +2,16 @@
     <PropertyGroup>
         <LangVersion>Latest</LangVersion>        
     </PropertyGroup>
-
+  
     <PropertyGroup>
         <!-- 
+            See 
+              https://aka.ms/dotnet/msbuild/customize 
+            for more details on customizing your build         
+            
             This file is used to override the default build properties of the .NET Core SDK.
-            More info: https://aka.ms/sdkimplicitprops
+            More info: 
+              https://aka.ms/sdkimplicitprops
             
             https://garywoodfine.com/what-is-this-directory-build-props-file-all-about/
         -->
@@ -17,6 +22,5 @@
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <CreatePackage>false</CreatePackage>
     </PropertyGroup>
-
-</Project>
-   
+  
+  </Project>

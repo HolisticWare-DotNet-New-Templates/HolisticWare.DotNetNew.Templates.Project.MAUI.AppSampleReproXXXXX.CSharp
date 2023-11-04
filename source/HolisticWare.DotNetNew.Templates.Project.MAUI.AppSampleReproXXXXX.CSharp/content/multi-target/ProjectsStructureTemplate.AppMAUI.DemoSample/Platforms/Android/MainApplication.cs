@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace ProjectsStructureTemplate.AppMAUI.DemoSample;
+namespace  AppMAUI.DemoSample;
 
 [Application]
 public class MainApplication : MauiApplication

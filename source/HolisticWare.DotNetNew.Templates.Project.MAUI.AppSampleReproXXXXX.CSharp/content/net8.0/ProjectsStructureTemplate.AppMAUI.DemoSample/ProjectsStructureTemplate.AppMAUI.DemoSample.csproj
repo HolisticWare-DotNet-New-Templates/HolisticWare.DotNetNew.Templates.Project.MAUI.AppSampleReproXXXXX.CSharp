@@ -94,4 +94,6 @@
     <UseHardenedRuntime>true</UseHardenedRuntime>
   </PropertyGroup>
 
+  <Import Project="..\..\SharedProject.UserInterface.MVVM\SharedProject.UserInterface.MVVM.projitems" Label="Shared" />
+
 </Project>

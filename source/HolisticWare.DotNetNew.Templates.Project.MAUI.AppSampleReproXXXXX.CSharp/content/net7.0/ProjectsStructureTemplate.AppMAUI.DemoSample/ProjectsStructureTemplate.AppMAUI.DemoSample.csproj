@@ -124,4 +124,6 @@
 	  <Folder Include="UserInterface/StopWatch/ViewModel/" />
 	</ItemGroup>
 
+	<Import Project="..\..\SharedProject.UserInterface.MVVM\SharedProject.UserInterface.MVVM.projitems" Label="Shared" />
+
 </Project>

@@ -1,23 +1,31 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace ProjectsStructureTemplate.AppMAUI.DemoSample;
+namespace AppMAUI.DemoSample;
 
-public static class MauiProgram
+public static class 
+										MauiProgram
 {
-	public static MauiApp CreateMauiApp()
+	public static 
+		MauiApp 
+										CreateMauiApp
+										(											
+										)
 	{
-		var builder = MauiApp.CreateBuilder();
+        MauiAppBuilder builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.ConfigureFonts(fonts =>
-			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+			.ConfigureFonts
+					(
+						fonts =>
+						{
+							fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+							fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+						}
+					);
 
-#if DEBUG
+		#if DEBUG
 		builder.Logging.AddDebug();
-#endif
+		#endif
 
 		return builder.Build();
 	}

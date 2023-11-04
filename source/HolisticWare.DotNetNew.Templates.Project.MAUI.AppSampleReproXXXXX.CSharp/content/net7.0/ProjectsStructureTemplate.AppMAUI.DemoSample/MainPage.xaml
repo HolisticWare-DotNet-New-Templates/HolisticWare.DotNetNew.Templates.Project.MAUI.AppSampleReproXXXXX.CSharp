@@ -18,20 +18,103 @@
                 HorizontalOptions="Center" 
                 />
 
-            <Button
-                x:Name="button_person"
-                Text="Person"
-                SemanticProperties.Hint="Person Page"
-                Clicked="OnPersonClicked"
-                HorizontalOptions="Center" 
-                />
-            <Button
-                x:Name="button_datetime"
-                Text="DateTime"
-                SemanticProperties.Hint="DateTime"
-                Clicked="OnDateTimeClicked"
-                HorizontalOptions="Center" 
-                />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions
+                    Padding="20" 
+                    RowSpacing="20"
+                    ColumnSpacing="20"
+                    >
+                    <ColumnDefinition 
+                        Width="*" 
+                        />
+                    <ColumnDefinition 
+                        Width="*" 
+                        />
+                    <ColumnDefinition 
+                        Width="*" 
+                        />
+                    <ColumnDefinition 
+                        Width="*" 
+                        />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Person"
+                    HorizontalOptions="Center"
+                    Grid.Row="0" Grid.Column="0" 
+                    />
+                    <Button
+                        x:Name="button_person"
+                        Text="Person"
+                        SemanticProperties.Hint="Person"
+                        Clicked="OnClicked_Person"
+                        HorizontalOptions="Fill"
+                        Grid.Row="0" Grid.Column="1" 
+                        />
+
+                <Label
+                    Text="Utilities Time/Timer/Stopwatch"
+                    HorizontalOptions="Center"
+                    Grid.Row="1" Grid.Column="0" 
+                    />
+                    <Button
+                        x:Name="button_datetime"
+                        Text="DateTime"
+                        SemanticProperties.Hint="DateTime"
+                        Clicked="OnClicked_DateTime"
+                        HorizontalOptions="Fill"
+                        Grid.Row="1" Grid.Column="1" 
+                        />
+                    <Button
+                        x:Name="button_clock"
+                        Text="Clock"
+                        SemanticProperties.Hint="Clock"
+                        Clicked="OnClicked_Clock"
+                        HorizontalOptions="Fill"
+                        Grid.Row="1" Grid.Column="2" 
+                        />
+
+                <Label
+                    Text="Utilities Pseudo Science"
+                    HorizontalOptions="Center"
+                    Grid.Row="2" Grid.Column="0" 
+                    />
+                    <Button
+                        x:Name="button_biorythm"
+                        Text="BioRythm"
+                        SemanticProperties.Hint="BioRythm"
+                        Clicked="OnClicked_BioRythm"
+                        HorizontalOptions="Fill"
+                        Grid.Row="2" Grid.Column="2" 
+                        />
+
+                <Label
+                    Text="Motoric Capabilities/Abilities"
+                    HorizontalOptions="Center"
+                    Grid.Row="3" Grid.Column="0" 
+                    />
+                    <Button
+                        x:Name="button_max_load_1rm"
+                        Text="Max Load 1RM"
+                        SemanticProperties.Hint="MaxLoad1RM"
+                        Clicked="OnClicked_MaxLoad1RM"
+                        HorizontalOptions="Fill"
+                        Grid.Row="3" Grid.Column="1" 
+                        />
+
+                <Label
+                    Text="Morpholoogic/Antropometric"
+                    HorizontalOptions="Center"
+                    Grid.Row="4" Grid.Column="0" 
+                    />
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>
