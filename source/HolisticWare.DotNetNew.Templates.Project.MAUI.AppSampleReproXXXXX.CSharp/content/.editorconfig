@@ -20,3 +20,6 @@ dotnet_style_qualification_for_method = true
 
 # CA1000: Do not declare static members on generic types
 dotnet_diagnostic.CA1000.severity = warning
+
+# CA1805: Do not initialize unnecessarily
+dotnet_diagnostic.CA1805.severity = warning
