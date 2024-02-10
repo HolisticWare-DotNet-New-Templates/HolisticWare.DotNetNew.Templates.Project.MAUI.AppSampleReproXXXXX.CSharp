@@ -1,57 +1,24 @@
-﻿namespace AppMAUI.DemoSample;
+﻿namespace AppMAUI;
 
-public partial class 
-										MainPage 
-										: 
-										ContentPage
+public partial class MainPage : ContentPage
 {
+	int count = 0;
 
-	public 
-										MainPage
-										(											
-										)
+	public MainPage()
 	{
 		InitializeComponent();
-
-		return;
 	}
 
-	private async
-		void 
-										OnPersonClicked
-										(
-											object sender, 
-											EventArgs e
-										)
+	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		/*
+		count++;
 
-		*/
-		// await Shell.Current.GoToAsync("//person");	// global route cannot be the only one
-		await Shell.Current.GoToAsync("person");		// non global
+		if (count == 1)
+			CounterBtn.Text = $"Clicked {count} time";
+		else
+			CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(button_person.Text);
-
-		return;
-	}
-
-	private async
-		void 
-										OnDateTimeClicked
-										(
-											object sender, 
-											EventArgs e
-										)
-	{
-		/*
-
-		*/
-		// await Shell.Current.GoToAsync("//person");	// global route cannot be the only one
-		await Shell.Current.GoToAsync("datetime");		// non global
-
-		SemanticScreenReader.Announce(button_datetime.Text);
-
-		return;
+		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
 
