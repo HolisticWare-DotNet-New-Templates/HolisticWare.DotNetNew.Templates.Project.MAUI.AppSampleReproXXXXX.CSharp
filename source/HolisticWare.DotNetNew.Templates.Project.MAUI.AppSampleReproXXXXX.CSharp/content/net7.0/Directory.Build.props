@@ -1,8 +1,12 @@
 <Project>
     <PropertyGroup>
-        <LangVersion>Latest</LangVersion>        
+        <MauiVersion>$(MauiVersion)</MauiVersion>
     </PropertyGroup>
-  
+
+    <PropertyGroup>
+        <LangVersion>Latest</LangVersion>
+    </PropertyGroup>
+
     <PropertyGroup>
         <!-- 
             See 
@@ -22,5 +26,5 @@
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
         <CreatePackage>false</CreatePackage>
     </PropertyGroup>
-  
-  </Project>
+
+</Project>
