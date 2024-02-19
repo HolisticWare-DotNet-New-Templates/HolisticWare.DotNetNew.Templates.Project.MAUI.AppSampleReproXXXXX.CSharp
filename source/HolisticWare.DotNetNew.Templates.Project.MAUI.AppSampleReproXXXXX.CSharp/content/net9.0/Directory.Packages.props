@@ -11,14 +11,14 @@
       <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0-preview.1.24080.9" />
   </ItemGroup>
 
   <!-- 
       MAUI Hybrid Blazor
   -->
   <ItemGroup>
-      <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.6" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="9.0.0-preview.1.9973" />
   </ItemGroup>
 
 </Project>

@@ -4,33 +4,29 @@
     <!-- 
       Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices 
     -->
-    <PackageId>HolisticWare.DotNetNew.Templates.Item.CakeDebug.CSharp</PackageId>
+    <PackageId>HolisticWare.DotNetNew.Templates.Project.MAUI.AppSampleReproXXXXX.CSharp</PackageId>
     <VersionSuffix>-alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
     <PackageVersion>0.0.1$(VersionSuffix)</PackageVersion>
     <Title>
-      HolisticWare dotnet new item template for Cake Build scripts debugging
+      HolisticWare dotnet new project template - Custom MAUI repro app sample template for testing with multiple dotnet versions
     </Title>
     <Authors>
       moljac, Miljenko Cvjetko, HolisticWare, Xamarin, Microsoft
     </Authors>
     <Description>
-      HolisticWare dotnet new item template for Cake Build scripts debugging with Visual Studio Code
+      HolisticWare dotnet new project template - Custom MAUI repro app sample template for testing with multiple dotnet versions
     </Description>
     <!--
       PackageTags both ';' and ' '
       https://github.com/dotnet/docs/issues/13553
     -->
     <PackageTags>
-      dotnet new item template cake build scripts debugging debug visual studio code 
+      dotnet new project template maui app sample repro testing multiple dotnet versions
     </PackageTags>
     <PackageProjectUrl>
       https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.DotNetNew.Templates.Item.CakeScriptDebug.CSharp
     </PackageProjectUrl>
-
-    <!-- 
-      Keep package type as 'Template' to show the package as a template package on nuget.org and 
-      make your template available in dotnet new search.
-    -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageType>Template</PackageType>
     <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
     <IncludeContentInPack>true</IncludeContentInPack>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolisticWare.DotNetNew.CakeDebug.CSharp", "HolisticWare.DotNetNew.CakeDebug.CSharp.csproj", "{CF7515CC-1B39-4C08-B5E8-CED439952E40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.DotNetNew.Templates.Project.MAUI.AppSampleReproXXXXX.CSharp", "HolisticWare.DotNetNew.Templates.Project.MAUI.AppSampleReproXXXXX.CSharp.csproj", "{ED7738C8-FA02-438B-958B-6C56E775144B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF7515CC-1B39-4C08-B5E8-CED439952E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF7515CC-1B39-4C08-B5E8-CED439952E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF7515CC-1B39-4C08-B5E8-CED439952E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF7515CC-1B39-4C08-B5E8-CED439952E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7738C8-FA02-438B-958B-6C56E775144B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7738C8-FA02-438B-958B-6C56E775144B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7738C8-FA02-438B-958B-6C56E775144B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7738C8-FA02-438B-958B-6C56E775144B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
